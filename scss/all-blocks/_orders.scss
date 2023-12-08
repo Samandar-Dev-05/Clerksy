@@ -1,0 +1,151 @@
+.orders {
+    padding: 114px 0 124px;
+    background: #F2EFE6;
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        color: #163A24;
+        font-size: 47px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+        margin-bottom: 26px;
+    }
+
+    &-text {
+        margin-bottom: 18px;
+        color: #163A24;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5.5px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+    }
+
+    &-item-text {
+        color: #163A24;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    &-item-title {
+        color: #163A24;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.5px;
+    }
+
+    &-item1,
+    &-item2 {
+        width: 393px;
+        position: relative;
+        padding: 19px 0 23px;
+    }
+
+
+    &-item1 p {
+        width: 260px;
+    }
+
+    &-item2 {
+        margin-right: 53.5px;
+    }
+
+    &-item1::after {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 36px;
+        background: url("../assets/svg/orders-background1.svg");
+        right: 7%;
+        top: 35%;
+    }
+
+    &-item2::after {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 36px;
+        background: url("../assets/svg/orders-background2.svg");
+        background-repeat: no-repeat;
+        right: 7%;
+        bottom: 35%;
+    }
+
+    &-item2 p {
+        width: 249px;
+    }
+
+    &-item3 {
+        width: 290px;
+        position: relative;
+
+        p {
+            width: 250px;
+            padding: 19px 0 23px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 286px;
+            height: 180px;
+            background: url("../../assets/svg/orders-background3.svg");
+            background-repeat: no-repeat;
+            top: -10%;
+            left: -7.5%;
+            padding: 2px;
+        }
+    }
+
+    &-button {
+        margin-top: 46px;
+        color: #FBFAF7;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 15px 25px;
+        border-radius: 160px;
+        background: #198C36;
+        border: 2px solid transparent;
+
+        &:hover {
+            background: rgba(25, 0, 255, 0.521);
+            border: 2px solid #000;
+        }
+
+        &:active {
+            background: #06e73f;
+            border: 2px solid #000;
+            color: #000;
+        }
+    }
+
+}

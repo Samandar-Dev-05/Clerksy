@@ -1,0 +1,77 @@
+.started-with-clerksy {
+    background: #163A24;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        background: url("../assets/svg/started-with-clerksy-background-left-img.svg");
+        background-repeat: no-repeat;
+        bottom: -1%;
+        left: 0;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        background: url("../assets/svg/started-with-clerksy-background-right-img.svg");
+        background-repeat: no-repeat;
+        bottom: -1%;
+        right: 0;
+    }
+
+    &-box {
+        padding: 114px 0 124px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        color: #FBFAF7;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+        margin-bottom: 26px;
+    }
+
+    &-text {
+        color: #FBFAF7;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 18px;
+    }
+
+    &-button {
+        color: #163A24;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 15px 25px;
+        border-radius: 160px;
+        background: #FAB5A0;
+        border: 2px solid transparent;
+
+        &:hover {
+            background: rgba(25, 0, 255, 0.521);
+            border: 2px solid #000;
+            color: #FBFAF7;
+        }
+
+        &:active {
+            background: #06e73f;
+            border: 2px solid #000;
+            color: #000;
+        }
+    }
+}

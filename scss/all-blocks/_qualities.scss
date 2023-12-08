@@ -1,0 +1,36 @@
+.qualities {
+    padding: 66px 0 120px;
+    background: #163A24;
+
+    &-title {
+        color: #FBFAF7;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+        margin-bottom: 74px;
+    }
+
+    &-list {
+        display: flex;
+    }
+
+    &-item {
+        width: 295px;
+        padding-bottom: 18.9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        margin-bottom: 28px;
+    }
+    &-text {
+        color: #FBFAF7;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}
